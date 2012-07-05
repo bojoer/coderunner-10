@@ -1,0 +1,6 @@
+系统需要安装特性的运行环境
+
+apt-get install g++
+apt-get install java6-sdk
+
+

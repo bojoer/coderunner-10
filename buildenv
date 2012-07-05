@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+$rootpath="/home/along/working/wikcode/env";
+
+system("mkdir -p $rootpath/bin");
+system("mkdir -p $rootpath/etc");
+
+system("ln -s /bin/bash $rootpath/bin/gcc") unless -e "$rootpath/bin/bash";
+system("ln -s /usr/bin/gcc $rootpath/bin/gcc") unless -e "$rootpath/bin/gcc";
+system("ln -s /usr/bin/gcc $rootpath/bin/g++") unless -e "$rootpath/bin/g++";
+
